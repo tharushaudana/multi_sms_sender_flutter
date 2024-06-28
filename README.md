@@ -47,7 +47,7 @@ To use this app, follow these steps:
 2. Enter the phone number you want to send SMS messages to.
 3. Enter the message content.
 4. Specify the number of times you want to send the message.
-5. Press the "Send" button to start sending SMS messages.
+5. Press the "Start" button to start sending SMS messages.
 
 ## Acknowledgements
 
