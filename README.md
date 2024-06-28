@@ -1,16 +1,59 @@
-# multi_sms_sender
+# SMS Voting App
 
-A new Flutter project.
+This Flutter mobile app allows users to send multiple SMS messages to a single destination. It was specifically built for participating in SMS voting systems used by some television programs, such as voice competitions. 
 
-## Getting Started
+## Background
 
-This project is a starting point for a Flutter application.
+The inspiration for this app came when my girlfriend's brother participated in a voice competition called "Derana Little Star". To support him, I created this app to make the SMS voting process easier and more efficient.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Send multiple SMS messages to a single destination
+- Simple and user-friendly interface
+- Built with Flutter for cross-platform compatibility
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshot
+
+![Screenshot](screenshots/01.png)
+
+## Packages Used
+
+- `easy_send_sms: ^0.0.1`
+
+## Installation
+
+To use this app, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/tharushaudana/multi_sms_sender_flutter.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd your-repo
+   ```
+3. Install the dependencies:
+   ```bash
+   flutter pub get
+   ```
+4. Run the app:
+   ```bash
+   flutter run
+   ```
+
+## Usage
+
+1. Open the app.
+2. Enter the phone number you want to send SMS messages to.
+3. Enter the message content.
+4. Specify the number of times you want to send the message.
+5. Press the "Send" button to start sending SMS messages.
+
+## Acknowledgements
+
+This project uses the following package:
+- [easy_send_sms](https://pub.dev/packages/easy_send_sms)
+
+## Conclusion
+
+I hope this project helps anyone who needs to send multiple SMS messages for voting purposes or other similar needs.
