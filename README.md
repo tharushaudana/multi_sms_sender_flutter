@@ -30,7 +30,7 @@ To use this app, follow these steps:
    ```
 2. Navigate to the project directory:
    ```bash
-   cd your-repo
+   cd multi_sms_sender_flutter
    ```
 3. Install the dependencies:
    ```bash
