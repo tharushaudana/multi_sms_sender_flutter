@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Multi SMS Sender'),
+      home: const MyHomePage(title: 'Vote for Dinuja'),
     );
   }
 }
@@ -51,8 +51,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
   final _easySmsPlugin = EasySms();
 
-  String _phone = '';
-  String _msg = '';
+  String _phone = '9900';
+  String _msg = 'DLS 02';
   int _repeatCount = 0;
   int _interval = 5; // in seconds
 
@@ -160,33 +160,21 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              TextFormField(
-                onChanged: (value) {
-                  if (isValidPhoneNumber(value)) {
-                    _phone = value;
-                  } else {
-                    _phone = '';
-                  }
-
-                  setState(() {});
-                },
-                readOnly: !_stopSending,
-                decoration: const InputDecoration(
-                  hintText: "Destination (ex: +94770000000)",
-                ),
+              const Text(
+                "DLS<space>02",
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.grey),
               ),
-              const SizedBox(height: 10),
-              TextFormField(
-                onChanged: (value) {
-                  _msg = value.trim();
-                  setState(() {});
-                },
-                readOnly: !_stopSending,
-                decoration: const InputDecoration(
-                  hintText: "Type text message here",
-                ),
+              const Text(
+                "9900",
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.grey),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 30),
               TextFormField(
                 onChanged: (value) {
                   int? val = int.tryParse(value);
